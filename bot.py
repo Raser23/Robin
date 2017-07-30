@@ -10,7 +10,7 @@ import strings
 import os
 from flask import Flask, request
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(config.token)
 server = Flask(__name__)
 
 
