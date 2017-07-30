@@ -10,13 +10,14 @@ import strings
 import os
 from flask import Flask, request
 
-token = '431689751:AAH_sZLwpdsFV4KzdvPLw2REYqfPeTbPwU4'
+token = '435277049:AAFDlQ9jYtiRbtOi_dcHNetEVVGLrVYQ4H0'
 bot = telebot.TeleBot(token)
 server = Flask(__name__)
 
 
 # recognize_mode = False
 # cut_mode = False
+
 
 
 @bot.message_handler(commands=['start', 'help'])
