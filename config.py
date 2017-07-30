@@ -1,2 +1,2 @@
-token = '435277049:AAFDlQ9jYtiRbtOi_dcHNetEVVGLrVYQ4H0'
+token = '433017551:AAHVutGW7Rx_7LDu-mnx7fr6ixbgE6lF35E'
 HOST = 'https://ribin.herokuapp.com'
