@@ -1,2 +1,2 @@
-token = '402394094:AAHU1-PIgUna1g80lb7YbARVBqO96dhmOmM'
-HOST = 'https://ssyp.herokuapp.com'
+token = '435277049:AAFDlQ9jYtiRbtOi_dcHNetEVVGLrVYQ4H0'
+HOST = 'https://ribin.herokuapp.com'

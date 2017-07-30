@@ -21,6 +21,7 @@ server = Flask(__name__)
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
+    print("start or help")
     markup = types.ReplyKeyboardMarkup()
     markup.row('/cut', '/recognize', '/info')
 
@@ -30,6 +31,7 @@ def handle_start_help(message):
 @bot.message_handler(commands=['cut'])
 def handle_cutsimb(message):
     # global cut_mode
+    print("cut")
     bot.send_message(message.chat.id, "Отправьте фото.")
 
     # cut_mode = True
@@ -142,6 +144,7 @@ def handle_cutsimb(message):
 
 @bot.message_handler(commands=['recognize'])
 def handle_cutsimb(message):
+    print("recognize")
     # global recognize_mode
     bot.send_message(message.chat.id, "Отправьте фото.")
 
@@ -206,6 +209,7 @@ def handle_cutsimb(message):
 
 @bot.message_handler(commands=['info'])
 def handle_start_help(message):
+    print("info")
     bot.send_message(message.chat.id, strings.alex_stats)
     bot.send_message(message.chat.id, strings.ghen_stats)
     bot.send_message(message.chat.id, strings.ilyag_stats)
