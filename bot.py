@@ -10,7 +10,6 @@ import strings
 import os
 from flask import Flask, request
 
-token = '435277049:AAFDlQ9jYtiRbtOi_dcHNetEVVGLrVYQ4H0'
 bot = telebot.TeleBot(token)
 server = Flask(__name__)
 
@@ -18,8 +17,12 @@ server = Flask(__name__)
 # recognize_mode = False
 # cut_mode = False
 
+@bot.message_handler()
+def handle_start_help(message):
 
+    bot.send_message(message.chat.id, "+++++")
 
+'''
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
     print("start or help")
@@ -218,7 +221,7 @@ def handle_start_help(message):
     bot.send_message(message.chat.id, strings.max_stats)
     bot.send_message(message.chat.id, strings.mari_stats)
     bot.send_message(message.chat.id, strings.master_stats)
-
+'''
 
 @server.route("/bot", methods=['POST'])
 def getMessage():
